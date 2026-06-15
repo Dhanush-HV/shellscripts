@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+echo "Please enter your age : "
+read age
+
+
+if [ "$age" -gt 18 ] || [ "$age" -lt 35 ]
+then
+  echo "the age is valid and you are eligible for the vote"
+else
+  echo "the enter age is not valid and you are not sutable for the age"
+fi
