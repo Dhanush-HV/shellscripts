@@ -1,0 +1,776 @@
+    1  apt get update
+    2  apt-get update
+    3  docker version
+    4  docker --version
+    5  # Add Docker's official GPG key:
+    6  sudo apt update
+    7  sudo apt install ca-certificates curl
+    8  sudo install -m 0755 -d /etc/apt/keyrings
+    9  sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
+   10  sudo chmod a+r /etc/apt/keyrings/docker.asc
+   11  # Add the repository to Apt sources:
+   12  sudo tee /etc/apt/sources.list.d/docker.sources <<EOF
+   13  Types: deb
+   14  URIs: https://download.docker.com/linux/ubuntu
+   15  Suites: $(. /etc/os-release && echo "${UBUNTU_CODENAME:-$VERSION_CODENAME}")
+   16  Components: stable
+   17  Architectures: $(dpkg --print-architecture)
+   18  Signed-By: /etc/apt/keyrings/docker.asc
+   19  EOF
+   20  sudo apt update
+   21  sudo apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+   22  sudo systemctl status docker
+   23  sudo systemctl start docker
+   24  systemctl status docker
+   25  ircal 
+   26  apt-get update
+   27  docker version
+   28  docker --version
+   29  docker info
+   30  docker images
+   31  docker --version
+   32  ls
+   33  cd /
+   34  ls
+   35  mkdir docker
+   36  cd docker
+   37  ls
+   38  docker container
+   39  vim index.html
+   40  docker container
+   41  docker run index.html
+   42  docker container run -d cntos/httpd
+   43  docker container run -it cntos/httpd
+   44  docker container run -it centos/httpd
+   45  docker container run -d --name dhanush httpd
+   46  docker image ls
+   47  docker image ll
+   48  docker image ls -ltr
+   49  docker image ls
+   50  docker container run -itd --name online ubuntu
+   51  docker container ls -a
+   52  ls
+   53  docker container run -itd --name batch centos/httpd 
+   54  docker container ls -a
+   55  ls
+   56  cat index.html
+   57  docker container cp index.html batch: /var/www/html 
+   58  docker container cp index.html batch:/var/www/html 
+   59  docker container ls -a
+   60  docker excel -it 0051cf940e7d/bin/bash  
+   61  docker excel -it 0051cf940e7d /bin/bash  
+   62  docker exec -it 0051cf940e7d /bin/bash  
+   63  docker container ls -a
+   64  ls
+   65  cat > index.html
+   66  cat index.html
+   67  vim index.html
+   68  ls
+   69  cat index.html
+   70  docker container cp index.htmp dhanush:/var/www/html
+   71  docker container cp index.html dhanush:/var/www/html
+   72  ls
+   73  docker container ls -a
+   74  docker exec -it  32134d14324e /bin/bash
+   75  docker container ls -a
+   76  docker container cp  index.html dhanush:/usr/local/apache2/htdocs
+   77  docker exec -it 32134d14324e /bin/bash
+   78  docker container run -it --name dhanvanth aws
+   79  docker container run -it --name dhanvanth 12
+   80  docker image ls
+   81  docker image pull aws
+   82  docker image pull nginx
+   83  docker image pull mysql
+   84  docker images ls
+   85  docker image ls
+   86  docker container ls -a
+   87  docker container attach online
+   88  docker conatainer attach dhanush
+   89  docker container attach dhanush
+   90  docker container ls -a
+   91  docker container start 
+   92  docker container start dhanush
+   93  docker container ls -a
+   94  docker container start all
+   95  docker container start online  dreamy_einstein
+   96  docker container ls -a
+   97  docker container inspect batch 
+   98  ip ifconfig.io
+   99  ifconfig.io
+  100  curl 13.235.87.62 
+  101  curl 172.17.0.1
+  102  docker container ls -a
+  103  docker container run -d --name batch -p 80:80 centos/httpd
+  104  docker container run -d --name devops -p 80:80 centos/httpd
+  105  docker container ls -a
+  106  docker container cp index.html devops:/var/www/html
+  107  curl 13.235.87.62
+  108  docker container run -d --name development -p 500:500
+  109  docker container ls -a
+  110  docker container run -d --name develop -p 83:80 httpd 
+  111  docker container ls -a
+  112  curl 13.235.87.62
+  113  vim index.html
+  114  docker container cp index.html develop:/usr/local/apache2/htdoc
+  115  docker container cp index.html develop:/usr/local/apache2/htdocs
+  116  curl 13.235.87.62
+  117  docker container run -d --name operation -p 500:80 ubuntu 
+  118  docker container run -d --name operation -p 500:80 httpd
+  119  docker container run -d --name operation1 -p 500:80 httpd
+  120  docker container ls -a
+  121  vim index.html
+  122  ls
+  123  docker container cp index.html operation1:/usr/local/apache2/htdocs
+  124  curl 13.235.87.62
+  125  cd /
+  126  ls
+  127  vim index.html
+  128  scp ubuntu@13.201.225.126:/index.html C:\Users\DHANUSH HV\Downloads
+  129  scp ubuntu@13.201.225.126:/index.html C:\Users\DHANUSHHV\Downloads
+  130  cd home
+  131  ls
+  132  cd ubuntu
+  133  cp /index.html /home/ubuntu/
+  134  ls
+  135  cd ..
+  136  scp -i "C:\Users\DHANUSH HV\Downloads\docker.pem" ubuntu@13.201.225.126:/home/ubuntu/index.html C:\Users\DHANUSH HV\Downloads
+  137  ls
+  138  cd  ubuntu
+  139  ls
+  140  dhanush.txt
+  141  vim dhanush.txt
+  142  chown root
+  143  chown --help
+  144  ls
+  145  ls -ltr
+  146  chown owner ubuntu index.html
+  147  chown ubuntu index.html
+  148  ls -ltr
+  149  aws cli
+  150  apt install awscli
+  151  awscli --version
+  152  aws --version
+  153  aws-cli --version
+  154  hostnamectl set-hostname dhanvanth
+  155  bash
+  156  aws --version
+  157  aws configure
+  158  aws s3 ls
+  159  aws ec2 run-instance --count 1
+  160  aws ec2 run -instance --count 1
+  161  aws ec2 run -instance --count1
+  162  aws --help
+  163  aws help
+  164  su 
+  165  aws ec2 run-instance --image-id ami-0685bcc683dadb6b9 --instance-type t3.micro --key-name docker --subnet-id subnet-0086ac2fbe0d62492 --security-groups-ids sg-074c030ee26a24874
+  166  aws ec2 run-instances --image-id ami-0685bcc683dadb6b9 --instance-type t3.micro --key-name docker --subnet-id subnet-0086ac2fbe0d62492 --security-group-ids sg-074c030ee26a24874  --tag-specifications 'ResourceType=instance.Tags=[{Key=Name.Value=Victory}]
+  167  aws ec2 run-instances   --image-id ami-0685bcc683dadb6b9   --instance-type t3.micro   --key-name docker   --subnet-id subnet-0086ac2fbe0d62492   --security-group-ids sg-074c030ee26a24874   --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Victory}]'
+  168  bash
+  169  hostnamectl set-hostname hulk
+  170  bash
+  171  ls
+  172  aws --version
+  173  aws s3 ls
+  174  aws ec2 run-nstance 
+  175  aws ec2 run-instance \  
+  176  aws ec2 run-instance \  --image-id ami-0685bcc683dadb6b9 \ --instance-type t3.micro \ --key-name docke \ --subnet-id subnet-0086ac2fbe0d62492 \ --security-group-ids sg-074c030ee26a24874 \ --associate-public-ip-address \ --tag-specifications 'ResourceType=instance,Tags=[{Key=Nmae,Value=marvel001}]' 
+  177  aws ec2 run-instances \  --image-id ami-0685bcc683dadb6b9 \ --instance-type t3.micro \ --key-name docke \ --subnet-id subnet-0086ac2fbe0d62492 \ --security-group-ids sg-074c030ee26a24874 \ --associate-public-ip-address \ --tag-specifications 'ResourceType=instance,Tags=[{Key=Nmae,Value=marvel001}]' 
+  178  aws ec2 run-instances --image-id ami-0685bcc683dadb6b9 --instance-type t3.micro --key-name docker --subnet-id subnet-0086ac2fbe0d62492 --security-group-ids sg-074c030ee26a24874  --tag-specifications 'ResourceType=instance.Tags=[{Key=Name.Value=Victory}]
+  179  ls
+  180  docker --version
+  181  docker version
+  182  docker info
+  183  docker container ls -ltr
+  184  docker container ls -lt
+  185  docker container ls 
+  186  docker ps
+  187  docker images
+  188  docker ps -a
+  189  do ker container run dhanush
+  190  docker container run dhanush
+  191  docker container run httpd
+  192  docker images
+  193  docker search nginx
+  194  docker search wordpress
+  195  docker pull wordpress
+  196  docker images
+  197  docker run -d docker_demon wordpress:latest 
+  198  docker run -d --name docker_demon wordpress:latest 
+  199  docker container ls
+  200  docker run -d --name wordpress -p 80:80 wordpress:latest
+  201  docker ls
+  202  docker container ls
+  203  docker stop 56b67cbaef84
+  204  docker log wordpress
+  205  docker logs wordpress
+  206  docker container ls
+  207  docker container ls -a
+  208  docker start mysql
+  209  docker container ls -a
+  210  docker network ls
+  211  ls
+  212  mkdir shell_scripting
+  213  ls
+  214  cd shell_scripting
+  215  vim hello.sh
+  216  ./hello.sh
+  217  ls -ltr
+  218  chomod +x hello.sh
+  219  chmod +x hello.sh
+  220  ls -ltr
+  221  ./hello.sh
+  222  vim hello.sh
+  223  ./hello.sh
+  224  vim hello.sh
+  225  ./hello.sh
+  226  vim user.sh
+  227  chmod +x user.sh
+  228  ls -ltr
+  229  ./user.sh
+  230  vim array.sh
+  231  ./array.sh
+  232  chmod +x array.sh
+  233  ./array.sh
+  234  docker ls
+  235  docker container ls
+  236  docker container rm -f ca24d8fa0e0a 
+  237  docker container ls
+  238  docker container ls -a
+  239  docker container prune
+  240  docker container ls -a
+  241  history
+  242  docker                                                                                                           
+  243  docker network create network-app
+  244  docker network ls
+  245  docker container run -d --name mysql_demon /
+  246  docker container run -d --name mysql_demon -name mysql -network network-app \
+  247  docker container run -d --name mysql_demon --name mysql --network network-app -e MYSQL_ROOT_PASSWORD=root123 -e MYSQL_DATABASE=wordpressdb -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpass123 mysql:8.0
+  248  docker container ls
+  249  docker ps
+  250  docker logs mysql
+  251  docker container run -d --name wordpress --network network-app -p 80:80 wordpress
+  252  docker container ls
+  253  docker container ls -a
+  254  docker start wordpress myql
+  255  docker start wordpress 
+  256  docker start mysql
+  257  docker container ls 
+  258  docker container rm -f 1909f4b48d3e
+  259  docker container rm -f ff9ee72ab748
+  260  docker container ls
+  261  docker container run -d --name mysql_demon -v dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 docker container run -d --name mysql_demon -v dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=dhanush mysql
+  262  docker container ls
+  263  docker container ls -a
+  264  docker start mysql_demon
+  265  docker container ls 
+  266  docker container ls -a
+  267  docker container run -d --name mysql -v dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 docker container run -d --name mysql_demon -v dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=dhanush mysql
+  268  docker container run -d --name mysql -v dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=dhanush mysql
+  269  docker container ls 
+  270  docker container ls -a
+  271  docker container inspect mysql
+  272  docker container ls 
+  273  docker container run -itd --name mysql -v dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=dhanush mysql
+  274  docker container run -itd --name mysql_dhanu -v dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=dhanush mysql
+  275  docker container ls
+  276  docker container ls -a
+  277  docker container run -itd --name mysql_akhil -v tbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=dhanush mysql
+  278  docker container ls
+  279  docker container ls -a
+  280  docker launch mysql
+  281  docker container run -d --name marvel -v mbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=hello@123 -e MYSQL_DATABASE=hassan mysql
+  282  docker container ls
+  283  docker container ls -a 
+  284  docker continer start marvel
+  285  docker  start marvel
+  286  docker container ls 
+  287  docker container prune
+  288  docker container ls -a
+  289  docker container ls 
+  290  docker container run -d --name hassan gbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=dhanu@123 -e MYSQL_DATABASE=marvel
+  291  docker container run -d --name hassan -v gbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=dhanu@123 -e MYSQL_DATABASE=marvel
+  292  docker container run -d --name hassan -v gbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=dhanu@123 -e MYSQL_DATABASE=marvel mysql
+  293  docker container ls
+  294  docker container ls -a
+  295  docker logs hassan
+  296  df -h
+  297  docker system df
+  298  docker system prune -a
+  299  df -h
+  300  docker container run -d --name marve -v dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=dhanush mysql
+  301  docker container ls
+  302  docker container ls -a
+  303  docker start marve
+  304  docker container ls 
+  305  docker volume ls
+  306  docker volume prune
+  307  docker volume ls
+  308  docker volume prune
+  309  docker volume ls
+  310  docker container run -d --name maven -v lbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=dhanush mysql
+  311  docker container ls 
+  312  docker inspect maven
+  313  mysql -h 172.17.0.2 -u root -p
+  314  apt install -client-core-8.0
+  315  apt install mysql-client-core-8.0
+  316  apt-get  install mysql-client-core-8.0
+  317  docker exec -it maven /bin/bash
+  318  sudo apt update
+  319  docker container ls
+  320  docker container ls -a
+  321  docker images
+  322  docker container run -d --name wordpress -p 80:80 wordpress
+  323  docker container ls 
+  324  docker container run -d --name  wordpree_demon -p 400:400 wordpress
+  325  docker container ls 
+  326  docker container ls -a
+  327  docker container prune
+  328  docker container ls -a
+  329  docker container prune
+  330  docker container ls -a
+  331  docker stop 0a68abd10ced 
+  332  docker container prune
+  333  docker container ls -a
+  334  docker container ls 
+  335  docker container run -d --name wordpress_dhanush -p 80:80 wordpress
+  336  docker container run -d --name wordpress_dhanush -p 400:80 wordpress
+  337  docker container run -d --name devops -p 400:80 wordpress
+  338  docker container ls 
+  339  docker container run -d prod \
+  340  docker network ls
+  341  docker network create worpress-mysql
+  342  docker network ls
+  343  docker container run -d prod \
+  344  docker run -d --name prod --network worpress-mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=marvel -e MYSQL_USER=wordpress -e MYSQL_PASSWORD=wordpress@123 mysql
+  345  docker container ls
+  346  docker container ls
+  347  docker container ls -a
+  348  docker start e043aa0d4054 
+  349  docker container ls 
+  350  docker ps
+  351  docker logs prod
+  352  docker container ls
+  353  docker container ls -a
+  354  docker system df
+  355  docker system df -v
+  356  docker container ls
+  357  docker container ls -a
+  358  docker start prod 
+  359  docker start devops
+  360  docker container ls 
+  361  docker ps -a
+  362  docker logs my sql | tail 20
+  363  docker logs mysql | tail 20
+  364  docker logs mysql | tail -20
+  365  docker logs prod | tail -20
+  366  docker container ls 
+  367  docker stop prod
+  368  docker container rm -f prod
+  369  docker network ls
+  370  docker run -d --name mysql@123 --network worpress-mysql -r MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=devops -e MYSQL_USER=dhanush -e MYSQL_PASSWORD=word@123 mysql
+  371  docker run -d --name mysql@123 --network worpress-mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=devops -e MYSQL_USER=dhanush -e MYSQL_PASSWORD=word@123 mysql
+  372  docker run -d --name mysql_123 --network worpress-mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=devops -e MYSQL_USER=dhanush -e MYSQL_PASSWORD=word@123 mysql
+  373  docker container ls 
+  374  docker ps
+  375  docker logs mysql_123
+  376  docker container ls
+  377  docker stop mysql_123
+  378  docker container rm -f  mysql_123
+  379  docker container ls
+  380  docker container run -d --name mysql_255 -v hello:/var/lib/mysql -e MYSQL_DATABASE=wipro -e MYSQL_USER=manoj -e MYSQL_ROOT_PASSWORD=root@2007 mysql
+  381  docker container ls
+  382  docker container run -d --name mysql_266 --network devops-mysql_266 -v hello:/var/lib/mysql -e MYSQL_DATABASE=wipro -e MYSQL_USER=manoj -e MYSQL_ROOT_PASSWORD=root@2007 mysql
+  383  docker container ls
+  384  docker network devops-mysql_255
+  385  docker network creat devops-mysql_255
+  386  docker network create devops-mysql_255
+  387  docker network ls
+  388  docker info mysql_255
+  389  clear
+  390  docker network ls
+  391  docker container ls
+  392  docker inspect mysql_255
+  393  docker inspect devops | grep -A 20 Networks
+  394  docker logs mysql_255 | grep -i "Creating user"
+  395  docker rm -f mysql_255
+  396  docker volume rm hello
+  397  docker volume stop  hello
+  398  docker volume rm -f hello
+  399  docker container ls
+  400  docker container ls -a
+  401  docker prune
+  402  docker container prune
+  403  docker container ls
+  404  docker stop devops
+  405  docker container prune
+  406  docker container ls
+  407  docker container ls -a
+  408  docker run -d --name mysql_255 -v hello:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@2007 -e MYSQL_DATABASE=wipro -e MYSQL_USER=manoj -e MYSQL_PASSWORD=word@123 mysql:8.0
+  409  docker container ls 
+  410  docker container ls -a
+  411  docker start mysql_255
+  412  docker container ls 
+  413  docker version
+  414  docker suystem df
+  415  docker system df
+  416  docker container ls
+  417  docker container ls -a
+  418  docker container prune
+  419  docker system df
+  420  docker system df -v
+  421  docker volume ls
+  422  docker volume prune
+  423  docker volume ls
+  424  docker volume prune
+  425  docker volume ls
+  426  docker volume rm -f Hardik dbdata dhanush gbdata hello lbdata mbdata tbdata
+  427  docker volume ls
+  428  docker docker network
+  429  docker network ls
+  430  docker network rm -f worpress-mysql devops-mysql_255 
+  431  docker network ls
+  432  docker network create wordpress-net
+  433  docker network ls
+  434  docker run -d --name mysql --network wordpress-net -v mysql-data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@2007 -e MYSQL_DATABASE=wordpressdb -e MYSQL_USER=wpuser -e MYSQL_PASSWORD=wpuser@123 mysql
+  435  docker container ls
+  436  docker ps
+  437  docker logs mysql
+  438  docker run -d --network wordpress-net -p 450:80 -e WORDPRESS_DB_HOST=mysql:3306 -e WORDPRESS_DB_NAME=wordpressdb -e WORDPRESS_DB_USER=wpuser -e WORDPRESS_DB_PASSWORD=wpuser@123 wordpress
+  439  docker ps
+  440  ls
+  441  docker container ls
+  442  docker container ls -a
+  443  docker start nifty_jemison  mysql
+  444  docker container ls 
+  445  docker stop nifty_jemison mysql
+  446  docker container ls 
+  447  docker container prune
+  448  docker container ls 
+  449  docker network ls
+  450  docker container run -d --name mysql --network  wordpress-net -v mysql_dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=redhat@123 -e MYSQL_DATABASE=jone -e MYSQL_USER=wordpress \
+  451  docker container run -d --name mysql --network  wordpress-net -v mysql_dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=redhat@123 -e MYSQL_DATABASE=jone mysql
+  452  docker container ls
+  453  docker inspect mysql
+  454  mysql -h 172.18.0.2 -u root -p 
+  455  docker logs mysql
+  456  docker container ls
+  457  apt install -client -core -8.0
+  458  apt-get  install -client -core -8.0
+  459  sudo apt-get  install -client -core -8.0
+  460  sudo apt update
+  461  sudo apt install mysql-client
+  462  mysql -h 172.18.0.2 -u root -p 
+  463  docker container ls
+  464  docker container run -d --name wordpress -v wpdata:/var/www/html -p 80:80 --network wordpress-net  wordpress 
+  465  docker container run -d --name wordpres -v wpdata:/var/www/html -p 81:80 --network wordpress-net  wordpress 
+  466  docker container ls
+  467  history
+  468  docker container ls
+  469  docker container ls -a
+  470  docker start wordpres mysql
+  471  docker container ls 
+  472  systemctl restart service
+  473  systemctl restart docker restart worpres mysql
+  474  systemctl restart docker restart wordpres mysql
+  475  docker restart wordpres mysql
+  476  docker container ls 
+  477  curl 13.127.86.101:81
+  478  docker container ls
+  479  docker volume ls
+  480  docker volume rm -f mysql_data mysql_dbdata
+  481  docker volume rm -f mysql_data 
+  482  docker volume rm -f mysql_dbdata 
+  483  docker volume ls
+  484  docker container ls
+  485  docker stop mysql
+  486  docker container rm -f mysql
+  487  docker volume ls
+  488  docker volume rm -f mysql-data mysql_dbdata
+  489  docker volume ls
+  490  docker container ls
+  491  docker container run -d --name mysql --network  wordpress-net -v mysql_dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=redhat@123 -e MYSQL_DATABASE=jone mysql
+  492  docker container ls
+  493  docker logs mysql
+  494  docker container ls
+  495  docker logs wordpres
+  496  docker container ls
+  497  docker stop wordpres
+  498  docker container rm -f wordpres
+  499  docker container ls
+  500  docker container run -d --name wordpresss -v wpdata:/var/www/html -p 83:80 --network wordpress-net  wordpress
+  501  docker container ls
+  502  curl 13.127.86.101
+  503  curl 13.127.86.101:83
+  504  docker inspect mysql
+  505  mysql -h 172.18.0.3 -u root -p 
+  506  docker container ls
+  507  docker logs 1daf4f4fc8df | tail -50
+  508  docker exec -it 1daf4f4fc8df mysql -uroot
+  509  mysql -h 172.18.0.3 -u root -p
+  510  docker inspect 1daf4f4fc8df | grep mysql_
+  511  docker inspect 1daf4f4fc8df | grep MYSQL
+  512  docker container ls
+  513  docker stop wordpresss mysql
+  514  docker container prune
+  515  docker container ls -a
+  516  docker volume prune
+  517  docker volume ls
+  518  docker volume prune
+  519  docker volume ls
+  520  docker volume rm -f mysql_dbdata wpdata
+  521  docker volume ls
+  522  docker container run -d --name mysql --network  wordpress-net -v mysql_dbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=root@123 -e MYSQL_DATABASE=hulk  mysql
+  523  docker container ls
+  524  docker inspect mysql
+  525  mysql -h 172.18.0.2 -u root -p 
+  526  docker container run -d --name wordpress_dhanush -v tbdata:/var/www/html -p 600:80 --network wordpress-net  wordpress
+  527  docker container ls
+  528  docker container ls -a
+  529  docker restart mysql
+  530  docker container ls 
+  531  sudo tail -50 /var/log/mysql/error.log
+  532  sudo systemctl status mysql
+  533  sudo systemctl status mysqld
+  534  sudo systemctl start mysqld
+  535  sudo systemctl start mysql
+  536  docker system df
+  537  docker system df -v
+  538  docker logs mysql
+  539  docker start mysql
+  540  docker container ls
+  541  docker container ls -a
+  542  docker container start mysql
+  543  docker container ls 
+  544  docker logs mysql
+  545  ls
+  546  cd  shell_scripting
+  547  ls
+  548  vim if_condition.sh
+  549  ls
+  550  ls -ltr
+  551  chmod +x if_condition.sh
+  552  ls -ltr
+  553  ./if_condition.sh
+  554  vim if_condition.sh
+  555  ./if_condition.sh
+  556  vim if_condition.sh
+  557  ./if_condition.sh
+  558  vim if_condition.sh
+  559  ls
+  560  cd shell_scripting
+  561  ls
+  562  vim cond.sh
+  563  ls -ltr
+  564  chmod +x cond.sh
+  565  ls -ltr
+  566  ./cond.sh
+  567  vim cond.sh
+  568  ./cond.sh
+  569  vim cond.sh
+  570  ./cond.sh
+  571  vim cond.sh
+  572  ./cond.sh
+  573  docker container ls -a
+  574  docker restart mysql
+  575  docker container ls 
+  576  docker start mysql
+  577  docker container ls 
+  578  docker volume ls
+  579  docker volume rm -f tbdata wpdata
+  580  docker volume rm -f mysql_base
+  581  docker container ls
+  582  docker container ls -a
+  583  docker start mysql
+  584  docker container ls 
+  585  free -h
+  586  docker logs mysql
+  587  dmesg -T | grep -i "killed process"
+  588  free -h
+  589  sudo fallocate -l 1G /swapfile
+  590  sudo chmod 600 /swapfile
+  591  sudo mkswap /swapfile
+  592  sudo swapon /swapfile
+  593  free -h
+  594  echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+  595  docker container ls
+  596  docker start mysql
+  597  docker container ls
+  598  apt-get install github
+  599  apt-get install git
+  600  git status
+  601  gitinit
+  602  docker system df
+  603  docker images
+  604  docker image rm -f mysql:8.0
+  605  docker images
+  606  docker container ls
+  607  docker container rm -f wordpress_dhanush
+  608  docker container ls
+  609  docker container ls -a
+  610  docker container prune
+  611  docker container ls -a
+  612  docker container run -d --name mysql --network  wordpress-net -v mysql_base:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=marvel@123 -e MYSQL_DATABASE=karnataka mysql
+  613  docker container ls 
+  614  docker ps
+  615  docker inspect mysql
+  616  mysql -h 172.18.0.2 -u boss -p 
+  617  mysql -h 172.18.0.2 -u root -p 
+  618  ls
+  619  docker container ls
+  620  docker inspect mysql
+  621  docker logs mysql
+  622  mysql -h 172.18.0.2 -u root -p
+  623  docker container ls
+  624  docker container run -d --name wordpres -v wpdata:/var/www/html -p 420:80 --network wordpress-net  wordpress
+  625  docker container ls
+  626  ls
+  627  cd shell_scripting
+  628  ls
+  629  vim check_file.sh
+  630  ls
+  631  chmod +x check_file.sh
+  632  ls
+  633  touch t1.txt
+  634  ./ check_file.sh
+  635  ./check_file.sh
+  636  vim check_file.sh
+  637  ./check_file.sh
+  638  df -h
+  639  lsblk -h
+  640  lsblk 
+  641  sudo swapoff /swapfile
+  642  sudo rm /swapfile
+  643  free -h
+  644  docker container
+  645  docker container ls
+  646  docker container ls -a
+  647  docker start wordpres mysql
+  648  docker container ls
+  649  docker ps -a
+  650  docker logs mysql
+  651  dmesg | grep -i kill
+  652  dmesg | grep -i oom
+  653  df -h
+  654  du -sh /var/lib/docker
+  655  free -h
+  656  docker ps -a
+  657  docker stats
+  658  df -h
+  659  free -h
+  660  docker container ls
+  661  docker container ls -a
+  662  free -h
+  663  docker start wordpres mysql
+  664  docker container ls 
+  665  free -h
+  666  docker stats
+  667  free -h
+  668  sudo fallocate -1 1G / swapfile
+  669  sudo fallocate -I 1G / swapfile
+  670  sudo fallocate -| 1G / swapfile
+  671  sudo fallocate  1G / swapfile
+  672  sudo fallocate -l 1G / swapfile
+  673  sudo fallocate -l 1G /swapfile
+  674  sudo chmod 600 /swapfile
+  675  sudo mkswap /swapfile
+  676  sudo swapon /swapfile
+  677  free -h
+  678  docker container ls
+  679  lsblk
+  680  docker container ls
+  681  docker stop wordpres mysql
+  682  apt-get update
+  683  free -h
+  684  docker container ls
+  685  docker container ls -a
+  686  docker start wordpres mysql
+  687  docker container ls 
+  688  swapon --show
+  689  echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+  690  cat /etc/fstab
+  691  swapon --show
+  692  free -h
+  693  docker container ls
+  694  docker stop mysql
+  695  docker container rm -f mysql 
+  696  docker container run -d --name mysql --network  wordpress-net -v mysql_mbdata:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=maven@123 -e MYSQL_DATABASE=hassan  mysql
+  697  docker container ls
+  698  docker stop wordpres
+  699  docker container rm -f wordpres
+  700  docker container run -d --name wordpress -v wqdata:/var/www/html -p 750:80 --network wordpress-net  wordpress
+  701  docker container ls
+  702  docker inspect mysql
+  703  ls
+  704  cd shell_scripting
+  705  ls
+  706  git --version
+  707  ls ~./ssh
+  708  ls ~/.ssh
+  709  cat authorized_keys
+  710  cat authorized_keys.ssh
+  711  ssh-keygen
+  712  cat dhanush_keys.pub
+  713  eval "$(ssh-agent -s)"
+  714  ssh-add dhanush_keys
+  715  cd /
+  716  ls
+  717  cd root
+  718  ls
+  719  cd snap
+  720  ls
+  721  cd amazon-ssm-agent
+  722  ls
+  723  ~/dhanush_keys
+  724  ssh -T git@github.com
+  725  git remote -v
+  726  git remote set-url origin git@github.com:Dhanush-HV/shellscripts.git
+  727  git remote -v
+  728  git push origin main
+  729  cd ..
+  730  cd /home/ubuntu
+  731  ls
+  732  cd shell_scripting
+  733  ls
+  734  ssh -T git@github.com
+  735  git init 
+  736  git status
+  737  git add .
+  738  git commit -m " every thing is fine "
+  739  git commit -m "every thing is fine"
+  740  git status
+  741  git remote -v
+  742  git remote add origin https://github.com/Dhanush-HV/shellscripts.git
+  743  git remote -v
+  744  git push -u origin main
+  745  git branch
+  746  git branches
+  747  git branche
+  748  git branch
+  749  git branch main
+  750  git branch
+  751  git commit -m "Initial commit"
+  752  git config --global user.email "dhanvanthhp@gmail.com"
+  753  git config --global user.name "Dhanush-HV"
+  754  git commit -m "Initial commit"
+  755  git branch
+  756  git branch main
+  757  git checkout main
+  758  git remote add origin https://github.com/Dhanush-HV/shellscripts.git
+  759  git push -u origin main
+  760  git pull
+  761  git push -u origin main
+  762  git fetch origin
+  763  git branch --set-upstream-to=origin/main main
+  764  git pull origin main --rebase
+  765  git push origin main
+  766  git remote set-url origin git@github.com:Dhanush-HV/shellscripts.git
+  767  ssh -T git@github.com
+  768  git log --oneline --graph --all -10
+  769  git remote -v
+  770  git remote set-url origin git@github.com:Dhanush-HV/shellscripts.git
+  771  ssh -T git@github.com
+  772  git remote -v 
+  773  ssh -T git@github.com
+  774  git status
+  775  git push -u origin main --force
+  776  history >> history.txt
