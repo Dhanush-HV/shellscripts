@@ -1,0 +1,10 @@
+
+echo " pleasw enter your first number over here  : "
+read num1
+
+echo " please enter the second number over here :  "
+read num2
+
+
+echo $(( num1 + num2 ))
+
